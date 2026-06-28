@@ -25,19 +25,21 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ ] The purpose of the game is to correctly guess the number within the given range within the given number of attempts. The answer is chosen randomly each time and the user can utilize hints to better understand how far away they are from the right answer
+- [ ] New Game button didn't work, hints had inverted logic and described the previous guess instead of what the next guess should be
+- [ ] Inverted the string logic so the game told you what your next guess should be, updated the states so the New Game button changed the state
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Answer is 60 (Unknown to user)
+2. User enters 70 as a guess
+3. Game returns "Lower"
+4. User enters 50
+5. Game returns "Higher"
+6. User enters 60
+7. Game ends since guess was correct
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
